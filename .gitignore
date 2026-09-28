@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Test outputs
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/blob-report/
+/playwright/.tmp/
+
+# Compiled output
+/dist/
+
+# IDEs and editors
+/.idea
+/.vscode
+.DS_Store
+*.swp
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+/coverage/

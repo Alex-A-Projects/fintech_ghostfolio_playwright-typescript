@@ -1,0 +1,25 @@
+{
+  "name": "ghostfolio-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation test suite for Ghostfolio using POM",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:ui-only": "playwright test tests/ui",
+    "test:api-only": "playwright test tests/api",
+    "test:db-only": "playwright test tests/database",
+    "codegen": "playwright codegen https://ghostfol.io"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.10",
+    "pg": "^8.13.1",
+    "prisma": "^6.19.3",
+    "typescript": "^5.4.0"
+  }
+}
