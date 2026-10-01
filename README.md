@@ -5,9 +5,13 @@ the open-source wealth management software.
 
 ## Tech stack
 
-- **Playwright** + **TypeScript** with the **Page Object Model**.
-- **node-postgres** for direct PostgreSQL queries against a local
-  Docker Ghostfolio instance.
+- **Playwright** (`@playwright/test`) + **TypeScript** with the
+  **Page Object Model** — UI tests for every public marketing page.
+- **node-postgres** (`pg`) for direct PostgreSQL queries against a
+  local Ghostfolio instance.
+- **Prisma** for schema introspection and `db push` of the Ghostfolio
+  Prisma schema in `utils/db/prisma/schema.prisma`.
+- **Node.js 20+** runtime.
 - Targets `https://ghostfol.io` by default (override via env vars).
 
 ## Project layout
